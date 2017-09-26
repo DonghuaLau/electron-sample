@@ -1,0 +1,33 @@
+
+.left, .right{
+	height:100%;
+	margin-bottom: 0px;
+	position: relative;
+    float: left;
+}
+
+.left{
+	width:180px;
+	background-color: #5b5b5b;
+	-webkit-app-region: drag;
+	z-index:10;
+}
+
+.right{
+	width: 100%;
+	margin-left: -180px;
+	background-color: #e8f5eb;
+}
+
+.head{
+	height:40px;
+	width: 100%;
+	//float: right;
+	padding-left: 180px;
+	background-color: #f1f1f1;
+	-webkit-app-region: drag;
+}
+
+.main{
+	padding-left: 180px;
+}
