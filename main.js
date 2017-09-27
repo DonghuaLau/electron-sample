@@ -39,18 +39,9 @@ function createWindow () {
     win = null
   })
 
-  initEvents();
-
 }
 
 function initEvents() {
-	console.log("init events");
-
-	/*
-	jQuery("#close-win").click( function(){
-	  win.close();
-	});
-	*/
 
 	document.getElementById("close-win").onclick = function() {
 	  win.close();
@@ -86,4 +77,3 @@ app.on('activate', () => {
 })
 
 
-//initEvents();
