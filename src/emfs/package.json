@@ -1,0 +1,19 @@
+{
+	"name": "emfs",
+	"version": "0.0.1",
+	"author": "D.X. Lau <me@liudonghua.net>",
+	"description": "",
+	"main": "./emfs",
+	"dependencies": {
+		"imap": "1.1.x"
+	},
+	"engines": { 
+		"node": ">=0.8.0" 
+	},
+	"keywords": [ "fs", "client" ],
+	"licenses": "",
+	"repository": { 
+		"type": "git", 
+		"url": ""
+	}
+}

@@ -2,6 +2,12 @@ const {app, BrowserWindow} = require('electron')
 const path = require('path')
 const url = require('url')
 const jQuery = require('jquery')
+const emfs = require('emfs')
+
+const fs = require('fs')
+//const sleep = require('sleep');
+//const wait = require('wait.for');
+
 
 let win
 
@@ -39,6 +45,9 @@ function createWindow () {
     win = null
   })
 
+	test_emfs();
+	console.log("test_emfs end");
+
 }
 
 function initEvents() {
@@ -52,6 +61,15 @@ function initEvents() {
 	document.getElementById("max-win").onclick = function() {
 	  win.isMaximized() ? win.unmaximize() : win.maximize();
 	}
+}
+
+let g_emfs
+function test_emfs()
+{
+	var config = require('config.json');
+	g_emfs = new emfs(config);
+	g_emfs.open_box("code");
+
 }
 
 // This method will be called when Electron has finished

@@ -1,5 +1,13 @@
 {
-  "name"    : "myapp",
-  "version" : "0.1.0",
-  "main"    : "main.js"
+  "name": "myapp",
+  "version": "0.1.0",
+  "main": "main.js",
+  "dependencies": {
+    "imap": "^0.8.19",
+    "sleep": "file:node_modules/sleep",
+    "wait.for": "^0.6.6"
+  },
+  "devDependencies": {
+    "electron-rebuild": "^1.6.0"
+  }
 }
